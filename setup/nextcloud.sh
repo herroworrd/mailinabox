@@ -39,7 +39,7 @@ InstallNextcloud() {
 	# their github repositories.
 	mkdir -p /usr/local/lib/owncloud/apps
 
-	wget_verify https://github.com/nextcloud/contacts/releases/download/v2.1.8/contacts.tar.gz b5d5bbee33f0c32b124b46cb6aaab90c695ac170 /tmp/contacts.tgz
+	wget_verify https://github.com/nextcloud/contacts/releases/download/v3.0.3/contacts.tar.gz b5d5bbee33f0c32b124b46cb6aaab90c695ac170 /tmp/contacts.tgz
 	tar xf /tmp/contacts.tgz -C /usr/local/lib/owncloud/apps/
 	rm /tmp/contacts.tgz
 
@@ -78,7 +78,7 @@ InstallNextcloud() {
 	fi
 }
 
-nextcloud_ver=14.0.6
+nextcloud_ver=15.0.4
 nextcloud_hash=4e43a57340f04c2da306c8eea98e30040399ae5a
 
 # Check if Nextcloud dir exist, and check if version matches nextcloud_ver (if either doesn't - install/upgrade)
